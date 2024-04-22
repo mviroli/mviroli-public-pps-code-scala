@@ -10,7 +10,7 @@ object Nqueen extends App:
   @main def run() = placeQueens().zipWithIndex foreach (printSolution(_))
 
   def placeQueens(n: Int = size)(using factory: IterableFactory): Iterable[Solution] = n match
-    case 1 => factory(Set((0, 0)))
+    case 0 => factory(Set())
     case _ =>
       for
         queens <- placeQueens(n - 1)  // get a solution on a smaller grid
