@@ -5,5 +5,6 @@ lazy val root = (project in file("."))
     name := "pps-code-a",
     libraryDependencies += "com.github.sbt" % "junit-interface" % "0.13.2" % Test,
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.18" % Test,
-    libraryDependencies += "it.unibo.alice.tuprolog" % "tuprolog" % "3.3.0"
+    libraryDependencies += "it.unibo.alice.tuprolog" % "tuprolog" % "3.3.0",
+    libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.4.0"
   )
